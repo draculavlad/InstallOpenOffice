@@ -52,14 +52,10 @@ tar zxf Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_langpack-rpm_en-US.tar.g
 tar zxf Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_langpack-rpm_zh-CN.tar.gz 
 tar zxf Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_langpack-rpm_zh-TW.tar.gz 
 tar zxf Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_langpack-rpm_ja.tar.gz
-cd /opt/
-cd en-US/RPMS/ && rpm -ivh *.rpm 
-cd /opt/
-cd ja/RPMS/ && rpm -ivh *.rpm 
-cd /opt/
-cd zh-CN/RPMS/ && rpm -ivh *.rpm
-cd /opt/
-cd zh-TW/RPMS/ && rpm -ivh *.rpm
+cd /opt/en-US/RPMS/ && rpm -ivh *.rpm 
+cd /opt/ja/RPMS/ && rpm -ivh *.rpm 
+cd /opt/zh-CN/RPMS/ && rpm -ivh *.rpm
+cd /opt/zh-TW/RPMS/ && rpm -ivh *.rpm
 cd /opt/
 rm -rf openoffice.org
 rm -rf openoffice.org3
