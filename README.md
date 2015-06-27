@@ -1,5 +1,4 @@
-# InstallOpenOffice
-## for centos7
+# InstallOpenOffice for centos
 
 ## Install jdk 7##
 ```shell
