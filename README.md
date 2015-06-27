@@ -1,5 +1,8 @@
 # InstallOpenOffice for centos
 
+## References##
+* https://gist.github.com/scottvrosenthal/11187116
+
 ## Install jdk 7##
 ```shell
 wget --no-cookies \
@@ -36,6 +39,34 @@ wget http://downloads.sourceforge.net/project/openofficeorg.mirror/stable/3.4.1/
 tar zxf Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_install-rpm_en-US.tar.gz
 cd en-US/RPMS/
 rpm -ivh *.rpm
+```
+
+## Download and install openoffice language pack##
+```shell
+cd /opt/
+wget http://downloads.sourceforge.net/project/openofficeorg.mirror/localized/ja/3.4.1/Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_langpack-rpm_ja.tar.gz
+wget http://downloads.sourceforge.net/project/openofficeorg.mirror/localized/zh-CN/3.4.1/Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_langpack-rpm_zh-CN.tar.gz
+wget http://downloads.sourceforge.net/project/openofficeorg.mirror/localized/zh-TW/3.4.1/Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_langpack-rpm_zh-TW.tar.gz
+wget http://downloads.sourceforge.net/project/openofficeorg.mirror/stable/3.4.1/Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_langpack-rpm_en-US.tar.gz
+tar zxf Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_langpack-rpm_en-US.tar.gz 
+tar zxf Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_langpack-rpm_zh-CN.tar.gz 
+tar zxf Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_langpack-rpm_zh-TW.tar.gz 
+tar zxf Apache_OpenOffice_incubating_3.4.1_Linux_x86-64_langpack-rpm_ja.tar.gz
+cd /opt/
+cd en-US/RPMS/ && rpm -ivh *.rpm 
+cd /opt/
+cd ja/RPMS/ && rpm -ivh *.rpm 
+cd /opt/
+cd zh-CN/RPMS/ && rpm -ivh *.rpm
+cd /opt/
+cd zh-TW/RPMS/ && rpm -ivh *.rpm
+cd /opt/
+rm -rf openoffice.org
+rm -rf openoffice.org3
+rm -rf en-US
+rm -rf ja
+rm -rf zh-CN
+rm -rf zh-TW
 ```
 
 ## create start script##
