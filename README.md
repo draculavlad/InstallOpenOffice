@@ -1,0 +1,2 @@
+# InstallOpenOffice
+# for centos7
