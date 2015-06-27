@@ -57,8 +57,6 @@ cd /opt/ja/RPMS/ && rpm -ivh *.rpm
 cd /opt/zh-CN/RPMS/ && rpm -ivh *.rpm
 cd /opt/zh-TW/RPMS/ && rpm -ivh *.rpm
 cd /opt/
-rm -rf openoffice.org
-rm -rf openoffice.org3
 rm -rf en-US
 rm -rf ja
 rm -rf zh-CN
