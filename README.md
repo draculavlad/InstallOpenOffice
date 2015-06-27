@@ -90,7 +90,7 @@ exit 0
 chmod +x /etc/rc.d/init.d/openoffice
 chkconfig --add openoffice
 chkconfig openoffice on
-cd /etc/rc.d/init.d/ && ./openoffice
+cd /etc/rc.d/init.d/ && ./openoffice start
 netstat -nap | grep office
 ```
 * you might get something like this
