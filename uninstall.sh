@@ -84,4 +84,8 @@ rpm -e ooobasis3.4-javafilter-3.4.1-9593.x86_64 && \
 rpm -e ooobasis3.4-pyuno-3.4.1-9593.x86_64 && \
 rpm -e ooobasis3.4-core01-3.4.1-9593.x86_64 && \
 \
-rpm -e openoffice.org-ure-3.4.1-9593.x86_64
+rpm -e openoffice.org-ure-3.4.1-9593.x86_64 && \
+chkconfig openoffice off && \
+chkconfig --del openoffice && \
+rm -rf /etc/rc.d/init.d/openoffice
+
